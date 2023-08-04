@@ -1,27 +1,78 @@
+<!DOCTYPE html>
 <html>
-
-<style type="text/css">
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-</style>
-  
-<pre>&nbsp;</pre>
-<pre>&nbsp;</pre>
-<h1><center>TTG Through The Galaxies</center></h1>
-<img src="TTG-Logo.png" alt="Paris" class="center"/>
-  
-<pre>&nbsp;</pre>
-<center>
-  <a href="https://play.google.com/store/apps/details?id=dev.app2pack.ttg">Google play</a>
-  &nbsp;|&nbsp;
-  <a href="https://apps.apple.com/app/ttg-through-the-galaxy/id6444870791">AppStore</a>
-</center>
-<pre>&nbsp;</pre>
-<center>
-  <a href="privacy.html">Privacy policy</a>
-</center>
+<head>
+  <title>TTG - Through The Galaxies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+      display: grid;
+      grid-gap: 20px;
+      justify-items: center;
+      align-content: center;
+    }
+    .logo img {
+      width: 30%;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .screenshots img {
+      max-width: 100%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+    .links img {
+      width: 120px;
+    }
+    .privacy {
+      margin: 20px 0;
+    }
+    @media screen and (max-width: 600px) {
+      .links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Welcome to Through The Galaxies!</h2>
+  <div class="logo">
+    <img src="assets/TTG-Logo.png" alt="TTG - Through The Galaxies logo">
+  </div>
+  <div class="links">
+    <a href="https://play.google.com/store/apps/details?id=dev.app2pack.ttg" target="_blank"><img src="assets/google-play.svg" alt="Get it on Google Play"></a>
+    <a href="https://apps.apple.com/app/ttg-through-the-galaxy/id6444870791" target="_blank"><img src="assets/app-store.svg" alt="Download on the App Store"></a>
+  </div>
+  <p>Join us in a cosmic adventure and explore the universe like never before.</p>
+  <div class="screenshots">
+    <img src="https://play-lh.googleusercontent.com/o6KrRHIljf3-9oS66vzpsddG0w8WFaTlO-mnbMYb61Ev5hgw4EJWrtm5EBeQulvKBw=w5120-h2880-rw" alt="Game Screenshot 1">
+    <img src="https://play-lh.googleusercontent.com/f2D_4ax-ag175-sDs0pGiDy70gLHytKVigJlAWUjlzwx9jDHsqnYBbq2yNGN7O8Cv0o=w5120-h2880-rw" alt="Game Screenshot 2">
+    <img src="https://play-lh.googleusercontent.com/vxW6557DzlBfLtMVwOPzuFTFxMMlQAyRqG6EYs0yK3MdLUI4cph3tei2YKJZPmVjNL91=w5120-h2880-rw" alt="Game Screenshot 3">
+  </div>
+  <div class="privacy">
+    <a href="privacy.html" target="_blank">Privacy Policy</a>
+  </div>
+</div>
+</body>
 </html>
